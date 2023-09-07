@@ -51,11 +51,31 @@ module chopUpDigits_control_test;
              digits_ptr = 15;
              base = 1;
 
-      	# 2  go = 0;
         # 100
         for ( i = 14; i < 23; i = i + 1)
           $display("i = %d, value = %d", i, $signed(circuit.rf.r[i]));
 
+
+        // Test 2.5: Chop hex
+        $display("\n\nTest 2.5: 0x123456, base 16");
+
+        #2
+        for ( i = 0; i < 32; i = i + 1)
+          circuit.rf.r[i] <= 99;
+
+        # 2  go = 1;
+             number = 32'h123456;
+             digits_ptr = 15;
+             reset = 1;
+             base = 1;
+
+      	# 2  go = 1;
+             number = 32'h122226;
+             digits_ptr = 15;
+             base = 1;
+        # 100
+        for ( i = 14; i < 23; i = i + 1)
+          $display("i = %d, value = %d", i, $signed(circuit.rf.r[i]));  
 
 
         // Test 3: Mid run base change
