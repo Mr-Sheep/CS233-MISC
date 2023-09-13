@@ -34,8 +34,8 @@ module reg_writer_test;
     $display ( "Dumping register state: " );
     $display ( "  Register :  hex-value (  dec-value )" );
     for (i = 3 ; i < 14 ; i = i + 1)
-        $display ( "%d: 0x%x ( %d )", i, rf.r[i], rf.r[i]);
-    $display ( "%d: 0x%x ( %d )", 0, rf.r[0], rf.r[0]);
+        $display ( "%d: 0x%x ( %d ) %d", i, rf.r[i], rf.r[i], done);
+    // $display ( "%d: 0x%x ( %d )  %d", 0, rf.r[0], rf.r[0], done);
     
 
 
@@ -56,8 +56,8 @@ module reg_writer_test;
     $display ( "Second Run" );
     $display ( "  Register :  hex-value (  dec-value )" );
     for (i = 4 ; i < 14 ; i = i + 1)
-        $display ( "%d: 0x%x ( %d )", i, rf.r[i], rf.r[i]);
-    $display ( "%d: 0x%x ( %d )", 0, rf.r[0], rf.r[0]);
+        $display ( "%d: 0x%x ( %d ) %d", i, rf.r[i], rf.r[i], done);
+    // $display ( "%d: 0x%x ( %d ) %d", 0, rf.r[0], rf.r[0], done);
     $display ( "Done.  Simulation ending." );
 
     // Add your own testcases here!
