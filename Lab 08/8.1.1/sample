@@ -1,0 +1,18 @@
+./timer_exe
+VCD info: dumpfile timer.vcd opened for output.
+At time                    0, address = 0x00000000 data = 0 MemRead = 0 MemWrite = 0 TimerInterrupt = x TimerAddress = 0 cycle = z
+At time                    5, address = 0x00000000 data = 0 MemRead = 0 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 0 cycle = z
+At time                   10, address = 0xffff001c data = 0 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 0
+At time                   15, address = 0xffff001c data = 0 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 1
+At time                   25, address = 0xffff001c data = 0 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 2
+At time                   35, address = 0xffff001c data = 0 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 3
+At time                   45, address = 0xffff001c data = 0 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 4
+At time                   50, address = 0xffff001c data = 6 MemRead = 0 MemWrite = 1 TimerInterrupt = 0 TimerAddress = 1 cycle = z
+At time                   60, address = 0xffff001c data = 6 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 5
+At time                   65, address = 0xffff001c data = 6 MemRead = 1 MemWrite = 0 TimerInterrupt = 0 TimerAddress = 1 cycle = 6
+At time                   75, address = 0xffff001c data = 6 MemRead = 1 MemWrite = 0 TimerInterrupt = 1 TimerAddress = 1 cycle = 7
+At time                   85, address = 0xffff001c data = 6 MemRead = 1 MemWrite = 0 TimerInterrupt = 1 TimerAddress = 1 cycle = 8
+At time                   95, address = 0xffff001c data = 6 MemRead = 1 MemWrite = 0 TimerInterrupt = 1 TimerAddress = 1 cycle = 9
+At time                  100, address = 0xffff006c data = 6 MemRead = 0 MemWrite = 1 TimerInterrupt = 1 TimerAddress = 1 cycle = z
+At time                  105, address = 0xffff006c data = 6 MemRead = 0 MemWrite = 1 TimerInterrupt = 0 TimerAddress = 1 cycle = z
+timer_tb.v:41: $finish called at 110 (1s)
